@@ -47,7 +47,7 @@ function Login() {
     
     <form onSubmit={handleSubmit}>
     <div className="form-group row">
-      <label className="col-sm-2 "><FontAwesomeIcon icon={faUser}/>UserName: </label>
+      <label className="col-sm-2 "><FontAwesomeIcon icon={faUser}/>UserName:</label>
       
           <div className="col-sm-4">
               <input
@@ -72,8 +72,8 @@ function Login() {
             
             <div className="form-group row">
                 
-            <button className="btn-submit"  type="submit">Log In</button>
-              
+            <button className="btn-submit"  type="submit">Log In</button><b>OR</b><button className="btn-submit"  align="right">sign-up</button>
+             
            </div>
       </div>
 

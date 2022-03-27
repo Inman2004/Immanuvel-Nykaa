@@ -6,11 +6,10 @@ background: hotpink;
 position: absolute;
 bottom: 0;
 width: 100%;
-opacity:0.7;
+opacity:0.6;
 &:hover {
 	opacity:1.0;
 	transition: 400ms ease-in;
-	transition: 400ms ease-out;
 }
 
 @media (max-width: 1000px) {

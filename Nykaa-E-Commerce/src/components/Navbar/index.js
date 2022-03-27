@@ -1,6 +1,6 @@
 import React from 'react';
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faUser, faLock,} from "@fortawesome/free-solid-svg-icons";
+import {faUser} from "@fortawesome/free-solid-svg-icons";
 import {
 Nav,
 NavLink,
@@ -52,7 +52,7 @@ return (
 		</NavMenu>
 		
 		<NavBtn>
-		<NavBtnLink to='/login'><FontAwesomeIcon icon={faUser}/> - Sign In</NavBtnLink>
+		<NavBtnLink to='/login'><FontAwesomeIcon icon={faUser}/></NavBtnLink>
 		</NavBtn>
 	</Nav>
 	<footer>
