@@ -1,0 +1,47 @@
+
+  h1,h2,h3,h4,h5,h6,span {
+    color: #ff1bd9;
+    font-family: Century Gothic;
+  }
+  .btn-submit {
+    color:violet;
+    border-radius: 20px;
+    font-weight: bold;
+    transition: transform .2s;
+    width: fit-content;
+    padding: 10px 55px 10px 55px;
+    margin: auto;
+    border: 2px solid hotpink;
+  }.btn-submit:hover {
+    color: deeppink;
+    font-weight: bold;
+    transform: scale(1.1);
+    border: 2px solid deeppink;
+  }
+ 
+  form {
+    color: #ffffff;
+    width: 550px;
+    margin: auto;
+    background:violet;
+    box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
+    padding: 50px 55px 50px 55px;
+    border-radius: 15px;
+    font-family: Century Gothic;
+    transition: all .3s;
+  }
+
+  .col-sm-4 {
+    font-weight: 400;
+    color: #1d7fff;
+    width: max-content;
+    margin: auto;
+  }
+  input
+  {
+    color:deeppink;
+    border: #ff1bd9;
+  }
+  label{
+    font-weight: bold;
+  }
