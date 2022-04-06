@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
 }
 
 code {
@@ -12,10 +13,6 @@ code {
     monospace;
 }
 
-
-body {
-  padding: 20px;
-}
 h2 {
   margin-bottom: 20;
 }

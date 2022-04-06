@@ -2,13 +2,14 @@ import styled from 'styled-components';
 
 export const Box = styled.div`
 padding: 17px  0 18px 0;
-background: hotpink;
+background: lightpink;
 position: absolute;
 bottom: 0;
 width: 100%;
 opacity:0.6;
 &:hover {
 	opacity:1.0;
+	background:lightpink ;
 	transition: 400ms ease-in;
 }
 
@@ -46,20 +47,20 @@ grid-gap: 20px;
 `;
 
 export const FooterLink = styled.a`
-color: #fff;
+color:Steelblue;
 margin-bottom: 20px;
 font-size: 18px;
 text-decoration: none;
 
 &:hover {
-	color: green;
+	color: Steelblue;
 	transition: 200ms ease-in;
 }
 `;
 
 export const Heading = styled.p`
 font-size: 24px;
-color: #fff;
+color:deeppink;
 margin-bottom: 40px;
 font-weight: bold;
 `;

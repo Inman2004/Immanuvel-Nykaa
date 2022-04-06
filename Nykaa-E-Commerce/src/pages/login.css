@@ -1,11 +1,12 @@
 
   h1,h2,h3,h4,h5,h6,span {
-    color: deeppink;
     font-family: Century Gothic;
     font-weight: bolder;
-  }
+    text-align: justify;
+    margin-left: 45%;
+}
   .btn-submit {
-    color:violet;
+    color:deeppink;
     border-radius: 25px;
     font-weight: bold;
     transition: transform .2s;
@@ -13,11 +14,10 @@
     padding: 5px 40px 5px 40px;
     margin-top: 35px;
     margin-left:20px;
-    border: 2px solid hotpink;
+    border: 2px solid deeppink;
     
   }.btn-submit:hover {
-    color: deeppink;
-    font-weight: bold;
+    font-weight: bolder;
     transform: scale(1.1);
     border: 2px solid deeppink;
   }
@@ -28,20 +28,37 @@
   }
 
   form {
-    color: #ffffff;
+    color: white;
+    font-weight: bold;
+    outline: auto;
     width: 550px;
     margin: auto;
-    background:violet;
-    box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
+    background:lightpink;
+    box-shadow: 0px 14px 80px rgba(5, 5, 5, 0.137);
     padding: 50px 55px 50px 55px;
     border-radius: 15px;
     font-family: Century Gothic;
     transition: all .3s;
+    background: linear-gradient(-45deg, #23d5ab, #23a6d5, #e73c7e, #ee7752);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
   }
 
   .col-sm-4 {
     font-weight: 400;
-    color: #1d7fff;
+    color: deeppink;
     width: max-content;
     margin: auto;
   }
@@ -62,4 +79,22 @@
 }
   label{
     font-weight: bold;
+  }
+  
+  .container{
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
   }

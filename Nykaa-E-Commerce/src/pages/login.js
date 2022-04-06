@@ -72,7 +72,7 @@ function Login() {
             
             <div className="form-group row">
                 
-            <button className="btn-submit"  type="submit">Log In</button><b>OR</b><button className="btn-submit"  align="right">sign-up</button>
+            <button className="btn-submit"  type="submit">Log In</button>OR<button className="btn-submit"  align="right">sign-up</button>
              
            </div>
       </div>

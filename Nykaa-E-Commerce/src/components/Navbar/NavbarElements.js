@@ -7,12 +7,29 @@ export const Nav = styled.nav`
   font-weight: 400;
   font-family:Century Gothic ;
 height: 85px;
-box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
+box-shadow: 0px 14px 80px rgba(5, 5, 5, 0.201);
 justify-content: space-between;
 padding: 0.2rem calc((100vw - 1000px) / 2);
 z-index: 12;
 /* Third Nav */
 /* justify-content: flex-start; */
+
+background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+background-size: 400% 400%;
+animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+0% {
+	background-position: 0% 50%;
+}
+50% {
+	background-position: 100% 50%;
+}
+100% {
+	background-position: 0% 50%;
+}
+
 `;
 
 export const NavLink = styled(Link)`
@@ -27,15 +44,14 @@ font-family:Century Gothic;
 font-size:16.9px;
 cursor: pointer;
 &:hover {
-	color:violet;
+	color:white;
 	transform: scale(1.1);
 }
 &.active {
-	color: deeppink;
+	color:white;
 	font-weight: bold;
-	transform: scale(1.1);
-}
-`
+	font-size:17.9px;
+}`
 ;
 
 export const Bars = styled(FaBars)`
@@ -84,7 +100,7 @@ border-radius:50%;
 transition: transform .2s;
 background: transparent;
 padding: 10px 22px;
-color: #000000;
+color: black;
 cursor: pointer;
 transition: all 0.2s ease-in-out;
 text-decoration: none;
@@ -92,13 +108,13 @@ text-decoration: none;
 margin-left: 24px;
 &:hover {
 	transition: all 0.2s ease-in-out;
-	color:violet;
+	color:white;
 	font-weight: bold;
-	transform: scale(1.1);
+	transform: scale(1.2);
 }
 &.active
 {
-	color: deeppink;	
+	color:white;	
 }
 `;
 

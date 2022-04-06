@@ -8,6 +8,7 @@ return (
 		justifyContent: 'Center',
 		alignItems: 'Right',
 		height: '100vh'
+		
 	}}
 	>
 	<h1>About</h1>
