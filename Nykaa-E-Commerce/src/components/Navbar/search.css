@@ -14,7 +14,7 @@ form{
   }
   textarea:focus, .searchBar:focus{
     outline: 0px solid;
-    transform: scale(1.1);
+    transform: scale(1.2);
     background-color: transparent;
 }
 ::placeholder {

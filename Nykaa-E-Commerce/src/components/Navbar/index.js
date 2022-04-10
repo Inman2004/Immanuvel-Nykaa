@@ -29,17 +29,20 @@ return (
 	
 		<Bars />
 		<NavMenu>
-			 <img src={logo} classname="logo" alt="logo" height={30} width={120}></img>
+		<NavLink to='/#' activeStyle>
+		    <img src={logo} classname="logo" alt="logo" height={30} width={120}></img>
+		</NavLink>
+			 
 		<NavLink to='/about' activeStyle>
 			About
 		</NavLink>
-		<NavLink to='/' activeStyle>
+		<NavLink to='/Catagories' activeStyle>
 			Catagories
 		</NavLink>
 		<NavLink to='/events' activeStyle>
 			Events
 		</NavLink>
-		<NavLink to='/#' activeStyle>
+		<NavLink to='/Brands' activeStyle>
 			Brands
 		</NavLink>
 		<NavLink to='/annual' activeStyle>

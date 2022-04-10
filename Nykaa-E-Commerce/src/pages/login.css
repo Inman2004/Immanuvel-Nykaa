@@ -6,7 +6,10 @@
     margin-left: 45%;
 }
   .btn-submit {
-    color:deeppink;
+    color:white;
+    background: transparent;
+    outline-color: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    animation: gradient 15s ease infinite;
     border-radius: 25px;
     font-weight: bold;
     transition: transform .2s;
@@ -14,7 +17,7 @@
     padding: 5px 40px 5px 40px;
     margin-top: 35px;
     margin-left:20px;
-    border: 2px solid deeppink;
+    border: 2px solid ;
     
   }.btn-submit:hover {
     font-weight: bolder;
