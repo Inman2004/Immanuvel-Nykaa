@@ -45,12 +45,13 @@ function Login() {
        
     <h1>Log In</h1>
     
-    <form onSubmit={handleSubmit}>
+    <form className="login-form" onSubmit={handleSubmit}>
     <div className="form-group row">
       <label className="col-sm-2 "><FontAwesomeIcon icon={faUser}/>UserName:</label>
       
           <div className="col-sm-4">
               <input
+                className="user-input"
                 type="text"
                 value={name}
                 placeholder=" User Name"
@@ -63,6 +64,7 @@ function Login() {
         
             <div className="col-sm-4">
               <input
+                className="user-input"
                 type="password"
                 value={pass}
                 placeholder="Password"

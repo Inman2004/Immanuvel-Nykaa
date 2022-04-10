@@ -1,0 +1,36 @@
+form{
+    justify-content: space-between;
+    padding: 0.2rem calc((10vw - 1000px) / 2);
+    z-index: 12;
+    margin: auto;
+}
+.searchBar{
+    color:black;
+    border: 0px solid;
+    height: 25px;
+    transition: transform .2s;
+    background-color: transparent;
+    max-width: 130px;
+  }
+  textarea:focus, .searchBar:focus{
+    outline: 0px solid;
+    transform: scale(1.1);
+    background-color: transparent;
+}
+::placeholder {
+    color: white;
+    font-size:small;
+  }
+.btn-search {
+    color:black;
+    background-color: transparent;
+    transition: transform .2s;
+    border: none;
+}
+.btn-search:hover {
+    font-weight: bolder;
+    transform: scale(1.2);
+}
+  .btn-search:active{
+    color: white;
+  }

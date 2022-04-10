@@ -7,9 +7,9 @@ export const Nav = styled.nav`
   font-weight: 400;
   font-family:Century Gothic ;
 height: 85px;
-box-shadow: 0px 14px 80px rgba(5, 5, 5, 0.201);
+box-shadow: 0px 14px 80px rgba(50, 50, 50, 0.201);
 justify-content: space-between;
-padding: 0.2rem calc((100vw - 1000px) / 2);
+padding: 0.2rem calc((100vw - 1200px) / 2);
 z-index: 12;
 /* Third Nav */
 /* justify-content: flex-start; */

@@ -12,7 +12,6 @@ import Blogs from './pages/blog';
 import SignUp from './pages/signup';
 import Login from './pages/login';
 import Sample from './pages/sample';
-import Search from './components/Navbar/search';
 
 function App() {
 return (

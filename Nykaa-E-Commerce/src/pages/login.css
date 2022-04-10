@@ -27,42 +27,25 @@
     border: 2px solid white;
   }
 
-  form {
+  .login-form {
     color: white;
     font-weight: bold;
     outline: auto;
     width: 550px;
     margin: auto;
-    background:lightpink;
+    background:transparent;
     box-shadow: 0px 14px 80px rgba(5, 5, 5, 0.137);
     padding: 50px 55px 50px 55px;
     border-radius: 15px;
     font-family: Century Gothic;
     transition: all .3s;
-    background: linear-gradient(-45deg, #23d5ab, #23a6d5, #e73c7e, #ee7752);
     background-size: 400% 400%;
-    animation: gradient 15s ease infinite;
-}
-
-@keyframes gradient {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
   }
-
   .col-sm-4 {
-    font-weight: 400;
-    color: deeppink;
     width: max-content;
     margin: auto;
   }
-  input
+  .user-input
   {
     color:deeppink;
     background-color: ghostwhite;
@@ -71,7 +54,7 @@
     width: 160px;
     transition: transform .2s;
   }
-  textarea:focus, input:focus{
+  textarea:focus, .user-input:focus{
     outline:solid;
     outline-color: deeppink;
     transform: scale(1.1);
