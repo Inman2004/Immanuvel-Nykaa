@@ -2,14 +2,14 @@ import styled from 'styled-components';
 
 export const Box = styled.div`
 padding: 17px  0 18px 0;
-background: lightpink;
+background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
 position: absolute;
 bottom: 0;
 width: 100%;
 opacity:0.6;
 &:hover {
 	opacity:1.0;
-	background:lightpink ;
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
 	transition: 400ms ease-in;
 }
 
