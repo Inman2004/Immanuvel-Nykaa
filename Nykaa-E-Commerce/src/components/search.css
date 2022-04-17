@@ -6,20 +6,19 @@ form{
 }
 .searchBar{
     color:black;
-    border: 0px solid;
+    font-size: medium;
+    border: 0px solid black;
     height: 25px;
-    transition: transform .2s;
     background-color: transparent;
     max-width: 130px;
   }
   textarea:focus, .searchBar:focus{
     outline: 0px solid;
-    transform: scale(1.2);
     background-color: transparent;
 }
 ::placeholder {
-    color: white;
-    font-size:small;
+    color: gray;
+    font-size:medium;
   }
 .btn-search {
     color:black;

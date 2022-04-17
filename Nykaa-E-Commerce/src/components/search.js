@@ -4,7 +4,6 @@ import "./search.css";
 const SearchBar = () => (
     <form action="/" method="get">
         <label htmlFor="header-search">
-            <span className="visually-hidden">Search nykaa</span>
         </label>
         <input
             className="searchBar"
