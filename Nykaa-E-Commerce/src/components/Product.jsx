@@ -4,7 +4,7 @@ import {
   ShoppingCartOutlined,
 } from "@material-ui/icons";
 import styled from "styled-components";
-
+import { Link } from "react-router-dom";
 const Info = styled.div`
   opacity: 0;
   width: 100%;
@@ -63,7 +63,9 @@ const Icon = styled.div`
   &:hover {
     background-color: #e9f5f5;
     transform: scale(1.1);
+    
   }
+  
 `;
 
 const Product = ({ item }) => {
@@ -72,15 +74,21 @@ const Product = ({ item }) => {
       <Circle />
       <Image src={item.img} />
       <Info>
-        <Icon>
+        <Link to='/Cart'>
+          <Icon>
           <ShoppingCartOutlined />
-        </Icon>
-        <Icon>
+        </Icon></Link>
+        
+        <Link to='/Product'>
+          <Icon >
           <SearchOutlined />
-        </Icon>
-        <Icon>
+        </Icon></Link>
+        
+        <Link to='/ProductList'>
+          <Icon >
           <FavoriteBorderOutlined />
-        </Icon>
+        </Icon></Link>
+        
       </Info>
     </Container>
   );

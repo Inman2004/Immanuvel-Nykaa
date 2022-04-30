@@ -1,5 +1,7 @@
 import styled from "styled-components";
 import {mobile} from "../responsive";
+import { Link } from "react-router-dom";
+import { Divider } from "@material-ui/core";
 
 const Container = styled.div`
   width: 100vw;
@@ -25,7 +27,9 @@ const Wrapper = styled.div`
 
 const Title = styled.h1`
   font-size: 24px;
-  font-weight: 300;
+  font-weight: bolder;
+  margin-left:40%;
+  color:teal;
 `;
 
 const Form = styled.form`
@@ -47,14 +51,14 @@ const Button = styled.button`
   background-color: teal;
   color: white;
   cursor: pointer;
-  margin-bottom: 10px;
-`;
-
-const Link = styled.a`
-  margin: 5px 0px;
-  font-size: 12px;
-  text-decoration: underline;
-  cursor: pointer;
+  margin-top:15px;
+  margin-bottom: 20px;
+  border-radius:5px;
+  transition: transform .2s;
+  &:hover {
+		color:white;
+		transform: scale(1.1);
+	}
 `;
 
 const Login = () => {
@@ -63,11 +67,15 @@ const Login = () => {
       <Wrapper>
         <Title>SIGN IN</Title>
         <Form>
+          USER NAME
           <Input placeholder="username" />
+          PASSWORD
           <Input placeholder="password" />
-          <Button>LOGIN</Button>
-          <Link>DO NOT YOU REMEMBER THE PASSWORD?</Link>
-          <Link>CREATE A NEW ACCOUNT</Link>
+          <Button style={{margin:"auto"}}><Link to='/'style={{color:"white",textDecoration: 'none'}}>LOGIN</Link></Button>
+          <Divider style={{marginTop:"20px",marginBottom:"10px"}}/>
+          <Link to='/' style={{fontWeight:"bold"}}>fogetton password ?</Link>
+          <Divider  style={{marginTop:"20px",marginBottom:"10px"}}/>
+          <Link to='/Register' style={{fontWeight:"bold"}}>Create NEW Account</Link>
         </Form>
       </Wrapper>
     </Container>

@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { mobile } from "../responsive";
-
+import { Link } from "react-router-dom";
 const Container = styled.div`
   width: 100vw;
   height: 100vh;
@@ -46,7 +46,7 @@ const Agreement = styled.span`
 `;
 
 const Button = styled.button`
-  width: 40%;
+  width: 100%;
   border: none;
   padding: 15px 20px;
   background-color: teal;
@@ -57,6 +57,7 @@ const Button = styled.button`
 const Register = () => {
   return (
     <Container>
+      
       <Wrapper>
         <Title>CREATE AN ACCOUNT</Title>
         <Form>
@@ -70,9 +71,11 @@ const Register = () => {
             By creating an account, I consent to the processing of my personal
             data in accordance with the <b>PRIVACY POLICY</b>
           </Agreement>
-          <Button>CREATE</Button>
+          <Link to='/'><Button>BACK</Button></Link> <Link to='/Registration'><Button>CREATE</Button></Link>
         </Form>
+        <Link to='/Login'>already have an account ?</Link>
       </Wrapper>
+      
     </Container>
   );
 };

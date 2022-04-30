@@ -45,7 +45,7 @@ const Button = styled.button`
     border-radius:25px;
     &:hover{
       transform: scale(1.1);
-      background-color: Deeppink;
+      background-color: rgba(266,165,213,0.3);
     }
 `;
 

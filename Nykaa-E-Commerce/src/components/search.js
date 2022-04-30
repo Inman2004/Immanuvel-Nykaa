@@ -1,5 +1,5 @@
 import React from "react";
-import "./search.css";
+import "./Style.css";
 
 const SearchBar = () => (
     <form action="/" method="get">
