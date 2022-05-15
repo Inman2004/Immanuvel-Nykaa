@@ -3,6 +3,7 @@ import { useState } from "react";
 import styled from "styled-components";
 import { sliderItems } from "../data";
 import { mobile } from "../responsive";
+import { Link } from "react-router-dom/cjs/react-router-dom.min";
 
 const Container = styled.div`
   width: 100%;
@@ -53,7 +54,7 @@ const ImgContainer = styled.div`
 `;
 
 const Image = styled.img`
-  height: 80%;
+  height: 90%;
 `;
 
 const InfoContainer = styled.div`
@@ -63,6 +64,7 @@ const InfoContainer = styled.div`
 
 const Title = styled.h1`
   font-size: 70px;
+  color:deeppink;
 `;
 
 const Desc = styled.p`
@@ -77,6 +79,20 @@ const Button = styled.button`
   font-size: 20px;
   background-color: transparent;
   cursor: pointer;
+  border-top:none;
+  border-bottom:none;
+  border-left: solid 4px deeppink;
+    border-right: none;
+    color: deeppink;
+    transition: .4s;
+
+}
+&:hover {
+    font-weight:bold;
+    
+    
+}
+
 `;
 
 const Slider = () => {
@@ -103,7 +119,7 @@ const Slider = () => {
             <InfoContainer>
               <Title>{item.title}</Title>
               <Desc>{item.desc}</Desc>
-              <Button>SHOW NOW</Button>
+              <Link to='/Product' style={{textDecoration: 'none',color:'deeppink'}}><Button>SHOW NOW</Button></Link>
             </InfoContainer>
           </Slide>
         ))}

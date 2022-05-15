@@ -7,6 +7,7 @@ import Cart from "./pages/Cart";
 import Navbar from "./components/Navbar";
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Registration from "./pages/Registration";
+
 function App() {
   return (
     <Router>
@@ -20,7 +21,7 @@ function App() {
         <Route path='/ProductList' component={ProductList} />
         <Route path='/Home' component={Navbar} />
         <Route path='/Registration' component={Registration}/>
-
+        
       </Switch>
     </Router>
   );

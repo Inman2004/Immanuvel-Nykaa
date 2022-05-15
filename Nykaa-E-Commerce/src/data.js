@@ -2,9 +2,9 @@
 export const sliderItems = [
     {
       id: 1,
-      img: "https://i.ibb.co/MNhdP0m/slider-2.png",
-      title: "SUMMER SALE",
-      desc: "DON'T COMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS.",
+      img: "https://previews.123rf.com/images/subbotina/subbotina1701/subbotina170100104/69431335-dia-dos-namorados-menina-de-modelo-de-moda-jovem-de-beleza-alegre-com-valentine-biscoitos-em-forma-d.jpg",
+      title: "Nykaa Fashion",
+      desc: "SAIL INTO SEA OF FASHION!",
       bg: "f5fafd",
     },
     {

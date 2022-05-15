@@ -65,6 +65,10 @@ text-fill-color: transparent;
 display: inline-block;
 font-size: 40px;
 }
+&:hover{
+  transform: scale(1.1);
+  
+}
 ${mobile({ fontSize: "24px" })}
 `;
 const Right = styled.div`
@@ -102,10 +106,10 @@ const Navbar = () => {
           </SearchContainer>
         </Left>
         <Center>
-          <Logo>NYKAA.</Logo>
+          <Logo>NYKAA</Logo>
         </Center>
         <Right>
-          <NavLink to='/'><HomeOutlined style={{ color: "#44107a", fontSize: 30 }} /></NavLink>
+          <NavLink to='/'><MenuItem><HomeOutlined style={{ color: "#44107a", fontSize: 30 }} /></MenuItem></NavLink>
           <NavLink to='/Register'style={{ textDecoration: 'none'}}><MenuItem><PersonAdd/></MenuItem></NavLink>
           <NavLink to='/Cart'>
             <MenuItem>
