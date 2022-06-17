@@ -1,11 +1,14 @@
-import { Avatar, Badge } from "@material-ui/core";
-import {ListOutlined, Search, ShoppingCartOutlined, HomeOutlined, PersonAdd, } from "@material-ui/icons";
+import { Avatar, Badge} from "@material-ui/core";
+import {Search, ShoppingCartOutlined, HomeOutlined, PersonAdd, } from "@material-ui/icons";
 import React from "react";
 import styled from "styled-components";
 import { mobile } from "../responsive";
 import { NavLink } from "react-router-dom/cjs/react-router-dom.min";
 import SearchBar from "./search";
-import Man from "./Images/person.jpeg";
+import SideBar from "./SideBar"
+
+import Model from "./Model"
+
 const Container = styled.div`
   height: 60px;
   ${mobile({ height: "50px" })}
@@ -35,8 +38,14 @@ const SearchContainer = styled.div`
   border: 0.5px solid lightgray;
   display: flex;
   align-items: center;
-  margin-left: 25px;
+  margin-right: 20%;
   padding: 0px;
+  border-radius:15px;
+  border:2px solid #44107a;
+  transition: transform .2s;
+&:hover{
+    transform:scale(1.1);
+  }       
 `;
 
 const Input = styled.input`
@@ -64,10 +73,6 @@ text-fill-color: transparent;
 -webkit-text-fill-color: transparent;
 display: inline-block;
 font-size: 40px;
-}
-&:hover{
-  transform: scale(1.1);
-  
 }
 ${mobile({ fontSize: "24px" })}
 `;
@@ -98,18 +103,21 @@ const Navbar = () => {
     <Container>
       <Wrapper>
         <Left>
-          <ListOutlined style={{ paddingRight: 23,textDecoration: 'none',color:"#44107a"}}><NavLink to='/Sidebar'/></ListOutlined>
+          <SideBar />
+          <NavLink to='/Dashboard'></NavLink>
           <Language>EN</Language>
-          <SearchContainer>
-           <SearchBar />
-            <Search style={{ color: "gray", fontSize: 16 }} />
-          </SearchContainer>
+          <NavLink to='/'><HomeOutlined style={{ color: "#44107a", fontSize: 30,marginLeft:"25px" }} /></NavLink>
         </Left>
         <Center>
           <Logo>NYKAA</Logo>
         </Center>
         <Right>
-          <NavLink to='/'><MenuItem><HomeOutlined style={{ color: "#44107a", fontSize: 30 }} /></MenuItem></NavLink>
+          <SearchContainer>
+           <SearchBar />
+            <Search style={{ color: "#44107a", fontSize: 22 }} />
+           
+          </SearchContainer>
+          
           <NavLink to='/Register'style={{ textDecoration: 'none'}}><MenuItem><PersonAdd/></MenuItem></NavLink>
           <NavLink to='/Cart'>
             <MenuItem>
@@ -117,12 +125,15 @@ const Navbar = () => {
               <ShoppingCartOutlined />
             </Badge>
           </MenuItem></NavLink>
-          <NavLink to='/Login'style={{ textDecoration: 'none'}}><MenuItem><Avatar src={Man} style={{ height:"35px",width:"35px" }}/></MenuItem></NavLink>
+          
+          <MenuItem><Model /></MenuItem>
+          
         </Right>
       </Wrapper>
     </Container>
     
   );
+  
 };
 
 

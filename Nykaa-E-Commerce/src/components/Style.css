@@ -1,13 +1,10 @@
-form{
-    justify-content: space-between;
-    padding: 0.2rem calc((10vw - 1000px) / 2);
-    z-index: 12;
-    margin: auto;
-}
+@import url('https://fonts.googleapis.com/css2?family=Niconne&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Luckiest+Guy');
+
 .searchBar{
     color:black;
     font-size: medium;
-    border: 0px solid black;
+    border: none;
     height: 25px;
     background-color: transparent;
     max-width: 130px;
@@ -15,6 +12,7 @@ form{
   textarea:focus, .searchBar:focus{
     outline: 0px solid;
     background-color: transparent;
+
 }
 ::placeholder {
     color: gray;
@@ -32,4 +30,13 @@ form{
 }
   .btn-search:active{
     color: white;
+   
+  }
+  .box {
+    text-align: left;
+    border: black ridge 1px;
+    border-radius: 10px;
+    margin: 3px;
+    width: 20rem;
+    padding-left: 10px;
   }

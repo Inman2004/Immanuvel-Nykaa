@@ -5,6 +5,13 @@ import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import Newsletter from "../components/Newsletter";
 import { mobile } from "../responsive";
+import { Link } from "react-router-dom/cjs/react-router-dom.min";
+import PositionedSnackbar from "../components/Alert";
+import { ArrowBack } from "@material-ui/icons";
+import Rating from "../components/Rating"
+import Comments from "../components/Comments"
+import Comment from "../components/Cmt"
+
 
 const Container = styled.div``;
 
@@ -32,7 +39,8 @@ const InfoContainer = styled.div`
 `;
 
 const Title = styled.h1`
-  font-weight: 200;
+  font-weight: 400;
+  color:;
 `;
 
 const Desc = styled.p`
@@ -103,7 +111,7 @@ const Amount = styled.span`
   margin: 0px 5px;
 `;
 
-const Button = styled.button`
+/*const Button = styled.button`
   padding: 15px;
   border: 2px solid teal;
   background-color: white;
@@ -113,38 +121,43 @@ const Button = styled.button`
   &:hover{
       background-color: #f8f4f4;
   }
-`;
+`; */
 
 const Product = () => {
   return (
     <Container>
       <Navbar />
       <Announcement />
-      <Wrapper>
+      <Link to='/' style={{marginLeft:"5%"}}><ArrowBack></ArrowBack></Link>
+      <Wrapper>     
         <ImgContainer>
-          <Image src="https://i.ibb.co/S6qMxwr/jean.jpg" />
+          <Image src="https://anayadesignerstudio.com/wp-content/uploads/2022/05/All-Time-Popular-Simple-Half-Saree-Design-For-Women-2022.jpg" />
         </ImgContainer>
         <InfoContainer>
-          <Title>Denim Jumpsuit</Title>
+          <Title>Popular Simple Half Saree, 6.3 m (with blouse piece)</Title>
           <Desc>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-            venenatis, dolor in finibus malesuada, lectus ipsum porta nunc, at
-            iaculis arcu nisi sed mauris. Nulla fermentum vestibulum ex, eget
-            tristique tortor pretium ut. Curabitur elit justo, consequat id
-            condimentum ac, volutpat ornare.
+          *Dhanshvi tex present* *Saree Fabrics :
+          -* Soft Pure Cotton Silk saree With Jacquard Zari weaving Border..
+           *Blouse* : cotton silk
+            *Saree Length*: 5.50 Meter 
+            *Blouse Piece Length*: 0.80 Meter 
+            *Number Of Piece*: 06 
+            *Price*: 500/- *
+            Note=zalar will came on saree*
           </Desc>
-          <Price>$ 20</Price>
+          <Price>₹ 1800</Price>
           <FilterContainer>
             <Filter>
               <FilterTitle>Color</FilterTitle>
-              <FilterColor color="black" />
-              <FilterColor color="darkblue" />
-              <FilterColor color="gray" />
+              <FilterColor color="red" />
+              <FilterColor color="darkviolet" />
+              <FilterColor color="gold" />
+              <FilterColor color="Yellow" />
             </Filter>
             <Filter>
-              <FilterTitle>Size</FilterTitle>
+              <FilterTitle>Saree Length</FilterTitle>
               <FilterSize>
-                <FilterSizeOption>XS</FilterSizeOption>
+                <FilterSizeOption>6.3 m (with blouse piece)</FilterSizeOption>
                 <FilterSizeOption>S</FilterSizeOption>
                 <FilterSizeOption>M</FilterSizeOption>
                 <FilterSizeOption>L</FilterSizeOption>
@@ -157,11 +170,14 @@ const Product = () => {
               <Remove />
               <Amount>1</Amount>
               <Add />
-            </AmountContainer>
-            <Button>ADD TO CART</Button>
+            </AmountContainer> 
+            <PositionedSnackbar/>
           </AddContainer>
-        </InfoContainer>
+        </InfoContainer> 
       </Wrapper>
+      <Rating />
+      <Comments />
+      <Comment />
       <Newsletter />
       <Footer />
     </Container>
