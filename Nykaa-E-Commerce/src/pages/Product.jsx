@@ -10,7 +10,7 @@ import PositionedSnackbar from "../components/Alert";
 import { ArrowBack } from "@material-ui/icons";
 import Rating from "../components/Rating"
 import Comments from "../components/Comments"
-import Comment from "../components/Cmt"
+import FullComment from "../components/Fullcomments"
 
 
 const Container = styled.div``;
@@ -177,7 +177,7 @@ const Product = () => {
       </Wrapper>
       <Rating />
       <Comments />
-      <Comment />
+      <FullComment />
       <Newsletter />
       <Footer />
     </Container>

@@ -88,9 +88,6 @@ export default function Comments() {
             ))}
           </TableBody>
         </Table>
-        <Link  href="#" onClick={preventDefault} sx={{ mt: 3 }}>
-          See more 
-        </Link>
       </React.Fragment>
     );
   }

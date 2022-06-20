@@ -9,7 +9,8 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Registration from "./pages/Registration";
 import Dashboard from "./components/dashboard/Dashboard";
 import Comments from "./components/Comments";
-
+import Blog from "./blog/Blog";
+import Newsletter from "./components/Newsletter";
 function App() {
   return (
     <Router>
@@ -25,7 +26,8 @@ function App() {
         <Route path='/Dashboard' component={Dashboard} />
         <Route path='/Registration' component={Registration}/>
         <Route path='/Comments' component={Comments}/>
-        
+        <Route path='/Blog' component={Blog}/>
+        <Route path='/Newsletter' component={Newsletter}/>
 <Route path='/Facebook' component={() => { 
      window.location.href = 'https://www.instagram.com/rv_imman/'; 
      return null;
@@ -44,6 +46,10 @@ function App() {
 }}/>
 <Route path='/Mail' component={() => { 
      window.location.href = 'mailto:nykaafashioncare'; 
+     return null;
+}}/>
+<Route path='/Admin' component={() => { 
+     window.location.href = 'https://isomorphic.redq.io/dashboard'; 
      return null;
 }}/>
       </Switch>

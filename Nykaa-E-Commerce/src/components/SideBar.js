@@ -11,7 +11,7 @@ import ListItemText from '@mui/material/ListItemText';
 import InboxIcon from '@mui/icons-material/MoveToInbox';
 import MailIcon from '@mui/icons-material/Mail';
 import DehazeOutlinedIcon from "@mui/icons-material/DehazeOutlined";
-import { FavoriteOutlined, PersonOutline, ShoppingBasketOutlined } from '@material-ui/icons';
+import { FavoriteOutlined, ShoppingBasketOutlined } from '@material-ui/icons';
 
 export default function TemporaryDrawer() {
   const [state, setState] = React.useState({
@@ -53,7 +53,7 @@ export default function TemporaryDrawer() {
       <List>
         {['Admin', 'About Us', 'Contact Us'].map((text, index) => (
           <ListItem key={text} disablePadding>
-            <ListItemButton>
+            <ListItemButton href="/Dashboard">
               <ListItemIcon>
                 {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
               </ListItemIcon>

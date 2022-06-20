@@ -1,13 +1,13 @@
-import { Avatar, Badge} from "@material-ui/core";
-import {Search, ShoppingCartOutlined, HomeOutlined, PersonAdd, } from "@material-ui/icons";
+import {Badge} from "@material-ui/core";
+import {Search, ShoppingCartOutlined, HomeOutlined, GroupOutlined, PersonAddOutlined, } from "@material-ui/icons";
 import React from "react";
 import styled from "styled-components";
 import { mobile } from "../responsive";
 import { NavLink } from "react-router-dom/cjs/react-router-dom.min";
 import SearchBar from "./search";
-import SideBar from "./SideBar"
-
-import Model from "./Model"
+import SideBar from "./SideBar";
+import Avatarbtn from "./Avatarbtn";
+import Tooltip from "@mui/material/Tooltip";
 
 const Container = styled.div`
   height: 60px;
@@ -104,8 +104,12 @@ const Navbar = () => {
       <Wrapper>
         <Left>
           <SideBar />
-          <NavLink to='/Dashboard'></NavLink>
-          <Language>EN</Language>
+          <Language style={{ color: "#44107a"}}>EN</Language>
+          <NavLink to='/Blog'>
+            <Tooltip title="Go to Blog">
+            <GroupOutlined style={{ color: "#44107a", fontSize: 30,marginLeft:"25px" }}/></Tooltip> 
+            </NavLink>
+          
           <NavLink to='/'><HomeOutlined style={{ color: "#44107a", fontSize: 30,marginLeft:"25px" }} /></NavLink>
         </Left>
         <Center>
@@ -118,15 +122,14 @@ const Navbar = () => {
            
           </SearchContainer>
           
-          <NavLink to='/Register'style={{ textDecoration: 'none'}}><MenuItem><PersonAdd/></MenuItem></NavLink>
+          <NavLink to='/Register'style={{ textDecoration: 'none'}}><MenuItem><PersonAddOutlined/></MenuItem></NavLink>
           <NavLink to='/Cart'>
             <MenuItem>
             <Badge badgeContent={2} color="error">
               <ShoppingCartOutlined />
             </Badge>
           </MenuItem></NavLink>
-          
-          <MenuItem><Model /></MenuItem>
+          <Avatarbtn />
           
         </Right>
       </Wrapper>

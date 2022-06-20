@@ -190,3 +190,9 @@ export const sliderItems = [
       title: "POPULAR PRODUCTS",
     },
   ];
+  export const recentcomts =[
+    {
+      id: 1,
+      date:""
+    }
+  ]

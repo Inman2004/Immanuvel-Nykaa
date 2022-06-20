@@ -5,6 +5,11 @@ import {
 } from "@material-ui/icons";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+import Checkbox from '@mui/material/Checkbox';
+import FavoriteBorder from '@mui/icons-material/FavoriteBorder';
+import Favorite from '@mui/icons-material/Favorite';
+import { ViewAgendaOutlined } from "@mui/icons-material";
+
 const Info = styled.div`
   opacity: 0;
   width: 100%;
@@ -67,7 +72,7 @@ const Icon = styled.div`
   }
   
 `;
-
+const label = { inputProps: { 'aria-label': 'Checkbox demo' } };
 const Product = ({ item }) => {
   return (
     <Container>
@@ -81,13 +86,12 @@ const Product = ({ item }) => {
         
         <Link to='/Product' style={{ color:"#23a6d5"}}>
           <Icon >
-          <SearchOutlined />
+          <ViewAgendaOutlined />
         </Icon></Link>
         
-        <Link to='/ProductList' style={{ color:"red"}}>
-          <Icon >
-          <FavoriteBorderOutlined />
-        </Icon></Link>
+        <Icon >
+          <Checkbox {...label} icon={<FavoriteBorder style={{color:"deeppink"}} />} checkedIcon={<Favorite style={{color:"deeppink"}} />} />
+        </Icon>
         
       </Info>
     </Container>
