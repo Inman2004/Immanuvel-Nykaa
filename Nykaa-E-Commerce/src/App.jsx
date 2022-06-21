@@ -29,15 +29,15 @@ function App() {
         <Route path='/Blog' component={Blog}/>
         <Route path='/Newsletter' component={Newsletter}/>
 <Route path='/Facebook' component={() => { 
-     window.location.href = 'https://www.instagram.com/rv_imman/'; 
+     window.location.href = 'https://www.instagram.com'; 
      return null;
 }}/>
  <Route path='/Instagram' component={() => { 
-     window.location.href = 'https://www.instagram.com/rv_imman/'; 
+     window.location.href = 'https://www.instagram.com'; 
      return null;
 }}/>
  <Route path='/Twitter' component={() => { 
-     window.location.href = 'https://www.instagram.com/rv_imman/'; 
+     window.location.href = 'https://www.instagram.com'; 
      return null;
 }}/>
 <Route path='/GitHup' component={() => { 
@@ -46,10 +46,6 @@ function App() {
 }}/>
 <Route path='/Mail' component={() => { 
      window.location.href = 'mailto:nykaafashioncare'; 
-     return null;
-}}/>
-<Route path='/Admin' component={() => { 
-     window.location.href = 'https://isomorphic.redq.io/dashboard'; 
      return null;
 }}/>
       </Switch>

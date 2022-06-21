@@ -10,12 +10,14 @@ import Header from './Header';
 import MainFeaturedPost from './MainFeaturedPost';
 import FeaturedPost from './FeaturedPost';
 import Main from './Main';
-import ImgList from "./ImgList"
-import Sidebar from './Sidebar';
+import ImgList from "./ImgList";
+import ImageBlog from "./ImageBlog";
+import Divider from "@mui/material/Divider";
 import Footer from './Footer';
 import post1 from './blog-post.1.md';
 import post2 from './blog-post.2.md';
 import post3 from './blog-post.3.md';
+
 
 const sections = [
   { title: 'Design', url: '#' },
@@ -97,22 +99,18 @@ export default function Blog() {
               <FeaturedPost key={post.title} post={post} />
             ))}
           </Grid>
-          <Grid container spacing={5} sx={{ mt: 3 }}><ImgList />
-            <Main title="From the firehose" posts={posts} />
-            
-            <Sidebar
-              title={sidebar.title}
-              description={sidebar.description}
-              archives={sidebar.archives}
-              social={sidebar.social}
-            />
+          <Grid container spacing={5} sx={{ mt: 3 }}>
+            <Main title="From the Recent Reviews" posts={posts} />
             <ImgList />
+            
           </Grid>
+          <Divider />
+          <Grid container spacing={5} sx={{ mt: 3 }}><ImageBlog /></Grid>
         </main>
       </Container>
       <Footer
-        title="Footer"
-        description="Something here to give the footer a purpose!"
+        title="USEFULL LINKS"
+        description="fashion is a source of looking attractive"
       />
     </ThemeProvider>
   );

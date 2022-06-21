@@ -99,3 +99,30 @@ const Product = ({ item }) => {
 };
 
 export default Product;
+
+export const Product1 = ({ item }) => {
+  return (
+    <Container>
+      <Circle />
+      <Image src={item.img} />
+      <Info>
+        <Link to='/Cart' style={{ color:"#ee7752"}}>
+          <Icon>
+          <ShoppingCartOutlined />
+        </Icon></Link>
+        
+        <Link to='/Product' style={{ color:"#23a6d5"}}>
+          <Icon >
+          <ViewAgendaOutlined />
+        </Icon></Link>
+        
+        <Icon >
+          <Checkbox {...label} icon={<FavoriteBorder style={{color:"deeppink"}} />} checkedIcon={<Favorite style={{color:"deeppink"}} />} />
+        </Icon>
+        
+      </Info>
+    </Container>
+  );
+};
+
+
