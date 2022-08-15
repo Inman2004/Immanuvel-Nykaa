@@ -42,7 +42,7 @@ export default function PositionedSnackbar() {
        sx={{
         width: 400,
         color: "secondary",
-        "& .MuiSnackbarContent-root": { backgroundColor: "orange",color:"white",fontWeight:"bolder",border:"solid 2px yellow",
+        "& .MuiSnackbarContent-root": { backgroundColor: "orange",color:"white",fontWeight:"bolder",border:"solid 2px white",
        }
       }}
         anchorOrigin={{ vertical, horizontal }}

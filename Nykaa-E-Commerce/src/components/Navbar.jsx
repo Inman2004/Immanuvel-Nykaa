@@ -8,6 +8,7 @@ import SearchBar from "./search";
 import SideBar from "./SideBar";
 import Avatarbtn from "./Avatarbtn";
 import Tooltip from "@mui/material/Tooltip";
+import Button  from "@mui/material/Button";
 
 const Container = styled.div`
   height: 60px;
@@ -97,7 +98,11 @@ const MenuItem = styled.div`
   }
   ${mobile({ fontSize: "12px", marginLeft: "10px" })}
 `;
-
+function handlenme(e) {
+  localStorage.removeItem("username")
+  localStorage.removeItem("type")
+  window.location = "/"
+}
 const Navbar = () => {
   return (
     <Container>
@@ -113,7 +118,7 @@ const Navbar = () => {
           <NavLink to='/'><HomeOutlined style={{ color: "#44107a", fontSize: 30,marginLeft:"25px" }} /></NavLink>
         </Left>
         <Center>
-          <Logo>NYKAA</Logo>
+          <Logo>SKY</Logo>
         </Center>
         <Right>
           <SearchContainer>
@@ -129,7 +134,13 @@ const Navbar = () => {
               <ShoppingCartOutlined />
             </Badge>
           </MenuItem></NavLink>
-          <Avatarbtn />
+          {localStorage.getItem("username") === null ? (
+                <>
+                <Button href="/Login" style={{ color: "#44107a", fontSize: 30,marginLeft:"25px" }}>Login</Button>
+                </>
+                ) : (
+                 <><Button onClick={handlenme}>Logout</Button></>
+                )}
           
         </Right>
       </Wrapper>

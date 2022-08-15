@@ -41,7 +41,7 @@ export const mainListItems = (
       <ListItemIcon>
         <LayersIcon />
       </ListItemIcon>
-      <ListItemText primary="Integrations" />
+     <Link to='/AddProduct' ><ListItemText primary="Add Products" /></Link> 
     </ListItemButton>
   </React.Fragment>
 );

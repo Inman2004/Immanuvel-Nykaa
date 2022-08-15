@@ -92,7 +92,7 @@ const Footer = () => {
   return (
     <Container>
       <Left>
-        <Logo>NYKAA.</Logo>
+        <Logo>SKY.</Logo>
         <Desc>
          Fashion is a source of looking better/attractive.
          |
@@ -131,13 +131,13 @@ const Footer = () => {
       <Right>
         <Title>Contact</Title>
         <ContactItem>
-          <Room style={{marginRight:"5px", color:"darkred"}}/> Nykaa W/M Fashion  , South Sunshine Bay 600075
+          <Room style={{marginRight:"5px", color:"darkred"}}/> SKY W/M Fashion  , South Sunshine Bay 600075
         </ContactItem>
         <ContactItem>
           <Phone style={{marginRight:"10px",color:"steelblue"}}/> +91 987 654 3210
         </ContactItem>
         <ContactItem>
-          <MailOutline style={{marginRight:"10px",color:"goldenrod"}} /><Link to='/Mail' style={{textDecoration:'none',color:"black"}}>Nykaafashioncare@Gmail.com</Link> 
+          <MailOutline style={{marginRight:"10px",color:"goldenrod"}} /><Link to='/Mail' style={{textDecoration:'none',color:"black"}}>Skycare@Gmail.com</Link> 
         </ContactItem>
         <Payment src="https://i.ibb.co/Qfvn4z6/payment.png" />
       </Right>
